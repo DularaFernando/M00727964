@@ -40,7 +40,7 @@ while x<60:
     leds[led+120] = (0,0,255)
     leds[led+180] = (0,0,255)
     leds[led+240] = (0,0,255)
-    leds[led+300] = (0,0,255)
+    leds[led+300] = (0,0,255)#too add
     
 
     client.put_pixels(leds)

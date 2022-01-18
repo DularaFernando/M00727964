@@ -17,9 +17,11 @@ def func3(val):
 while True:
     if value.isdigit() == True: #isdigit
         value = int(value)  # to convert into an int
-        #print("converted value is:" , value)
-        #print(f') it is of type {type(value)}.')
-        break #on correct value datatype: exit the loop
+        if value > 3 or value < 1:  # if value is outside of our range
+            value = input("please input a number between 1 and 3")
+            continue #skip rest of loop, start from isdigit() check again.
+        else:
+            break #on correct value datatype: exit the loop
     else:
         value=input("sorry mate, please provide an integer:") #ask for a new value
 
@@ -33,6 +35,9 @@ elif value == 2:
     print(func2(value))
 elif value == 3:
     print(func3(value))
+
+if value > 3 or value < 1: #if value is outside of our range
+    value = input("please input a number between 1 and 3")
 
 
 

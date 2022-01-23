@@ -8,14 +8,10 @@ client = opc.Client('localhost:7890')
 client.put_pixels(leds)
 client.put_pixels(leds)
 
-for led in range(8,9):
-    for rows in range(0,2):
-        leds[led+rows*60] = (255,255,0)
-client.put_pixels(leds)
-sleep(.1)
 
-for led in range(0,9):
-    for rows in range(2,3):
-        leds[led+rows*60] = (255,255,0)
+for led in range(0,2): 
+    for rows in range(6):
+        if die_outcome >= 3:
+            leds[led+rows*60] = (0,255,0)
 client.put_pixels(leds)
 sleep(.1)

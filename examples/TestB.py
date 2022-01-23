@@ -55,18 +55,12 @@ for i in range(10):
             print(20*die_outcome)
             player_two.fd(20*die_outcome)
 
-for led in range(0,1): #p
-    for rows in range(3):
-        if player_one_turn:
-            leds[led+rows*60] = (255,255,0)
+for led in range(0,2): 
+    for rows in range(6):
+        if die_outcome > 3:
+            leds[led+rows*60] = (0,255,0)
 client.put_pixels(leds)
 sleep(.1)
-
-for led in range(2,3):  #p
-    for rows in range(1,2):
-        if player_two_turn:
-            leds[led+rows*60] = (255,255,0)
-client.put_pixels(leds)
 
     #------------------- player 1 ---------------------
 

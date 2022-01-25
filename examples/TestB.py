@@ -59,9 +59,10 @@ for led in range(0,2):
     for rows in range(6):
         if die_outcome >= 3:
             leds[led+rows*60] = (0,255,0)
+            break
 client.put_pixels(leds)
 sleep(.1)
-
+   
     #------------------- player 1 ---------------------
 
 for led in range(0,1): #p

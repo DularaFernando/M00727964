@@ -32,17 +32,24 @@ player_two.goto(-200,-100)
 
 die = [1,2,3,4,5,6]
 
-while leds != off:
+while True:
     for i in range(10):
         if player_one.pos() >= (300,100):
                 print("Player One Wins!")
                 break
-        elif player_two.pos() >= (300,-100):
+        else:
+            player_two.pos() >= (300,-100):
                 print("Player Two Wins!")
                 break
         else:
-                player_one_turn = input("Press 'Enter' to roll the die ")
-                die_outcome = random.choice(die)
+
+           while led in range(0,1):
+                for rows in range(3):
+                    if player_one_turn >= input("Press 'Enter' to roll the die ")
+                    leds[led+rows*60] = (255,255,0)
+                    die_outcome = random.choice(die)
+            client.put_pixels(leds)
+            sleep(0.1)
 
 
 

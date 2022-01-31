@@ -9,7 +9,7 @@ client = opc.Client('localhost:7890')
 client.put_pixels(leds)
 client.put_pixels(leds)
 
-player_one = turtle.Turtle()
+player_one = turtle.Turtle() #C
 player_one.color("green")
 player_one.shape("turtle")
 player_one.penup()
@@ -42,6 +42,10 @@ for i in range(10):
     else:
             player_one_turn = input("Press 'Enter' to roll the die ")
             die_outcome = random.choice(die)
+            #if die_outcome >= 3: #i need add an animation here when the game is running and i am not sure how
+         #       leds[led+rows*60] = (0,255,0)# connect opc inside else. 
+       # #client.put_pixels(leds)
+       # sleep(.1)
             print("The result of the die roll is: ")
             print(die_outcome)
             print("The number of steps will be: ")
@@ -55,18 +59,11 @@ for i in range(10):
             print(20*die_outcome)
             player_two.fd(20*die_outcome)
 
-for led in range(0,2): 
-    for rows in range(6):
-        if die_outcome >= 3:
-            leds[led+rows*60] = (0,255,0)
-            break
-client.put_pixels(leds)
-sleep(.1)
-   
+
     #------------------- player 1 ---------------------
 
-for led in range(0,1): #p
-    for rows in range(3):
+for led in range(0,1): #p             #i already have an animation for end and it is working but i don't how to
+    for rows in range(3):               #do animation on top
         if player_one.pos() >= (300,100):
             leds[led+rows*60] = (255,255,0)
 client.put_pixels(leds)
@@ -212,24 +209,24 @@ for led in range(24,25): #R
 client.put_pixels(leds)
 sleep(.1)
 
-for led in range(28,30): #1
+for led in range(28,31): #1
     for rows in range(0,1):
         if player_one.pos() >= (300,100):
-            leds[led+rows*60] = (255,255,0)
+            leds[led+rows*60] = (255,200,0)
 client.put_pixels(leds)
 sleep(.1)
 
 for led in range(29,30): #1
-    for rows in range(1,2):
+    for rows in range(0,3):
         if player_one.pos() >= (300,100):
-            leds[led+rows*60] = (255,255,0)
+            leds[led+rows*60] = (255,200,0)
 client.put_pixels(leds)
 sleep(.1)
 
 for led in range(28,31): #1
     for rows in range(2,3):
         if player_one.pos() >= (300,100):
-            leds[led+rows*60] = (255,255,0)
+            leds[led+rows*60] = (255,200,0)
 client.put_pixels(leds)
 sleep(.1)
 
@@ -509,21 +506,21 @@ for led in range(24,25): #R
 client.put_pixels(leds)
 sleep(.1)
 
-for led in range(28,30): #1
+for led in range(28,32): #1
     for rows in range(0,1):
         if player_two.pos() >= (300,-100):
             leds[led+rows*60] = (255,255,255)
 client.put_pixels(leds)
 sleep(.1)
 
-for led in range(29,30): #1
-    for rows in range(1,2):
+for led in range(29,31): #1
+    for rows in range(0,3):
         if player_two.pos() >= (300,-100):
             leds[led+rows*60] = (255,255,255)
 client.put_pixels(leds)
 sleep(.1)
 
-for led in range(28,31): #1
+for led in range(28,32): #1
     for rows in range(2,3):
         if player_two.pos() >= (300,-100):
             leds[led+rows*60] = (255,255,255)

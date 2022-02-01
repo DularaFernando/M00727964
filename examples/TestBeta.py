@@ -320,26 +320,26 @@ def rainbow_1_1():
 
 def rainbow_1_2():
     for hue in range(300 , 360):
-        if player_one.pos() >= (300 , 100):
-            rgb_fractional = colorsys.hsv_to_rgb(hue / 360.0 , s , v)  # colorsys returns floats between 0 and 1
-            r_float = rgb_fractional[0]  # extract said floating point numbers
-            g_float = rgb_fractional[1]
-            b_float = rgb_fractional[2]
-            rgb = (r_float * 255 , g_float * 255 , b_float * 255)  # make new tuple with corrected values
-            client.put_pixels([rgb] * 120)  # send out
-            sleep(0.01)  # 20ms
-
-def rainbow_2_1():
-    for hue in range(120):
         rgb_fractional = colorsys.hsv_to_rgb(hue / 360.0 , s , v)  # colorsys returns floats between 0 and 1
         r_float = rgb_fractional[0]  # extract said floating point numbers
         g_float = rgb_fractional[1]
         b_float = rgb_fractional[2]
-
         rgb = (r_float * 255 , g_float * 255 , b_float * 255)  # make new tuple with corrected values
         client.put_pixels([rgb] * 120)  # send out
-
         sleep(0.01)  # 20ms
+
+def rainbow_2_1():
+    for hue in range(120):
+        if player_two.pos() >= (300 , -100):
+            rgb_fractional = colorsys.hsv_to_rgb(hue / 360.0 , s , v)  # colorsys returns floats between 0 and 1
+            r_float = rgb_fractional[0]  # extract said floating point numbers
+            g_float = rgb_fractional[1]
+            b_float = rgb_fractional[2]
+
+            rgb = (r_float * 255 , g_float * 255 , b_float * 255)  # make new tuple with corrected values
+            client.put_pixels([rgb] * 120)  # send out
+
+            sleep(0.01)  # 20ms
 
 def rainbow_2_2():
     for hue in range(300 , 360):
@@ -363,8 +363,8 @@ for i in range(20):
     elif player_two.pos() >= (300 , -100):
         print("Player Two Wins!")
         break
-    elif dice_outcome >= 3:
-        for led in range(60):
+    elif dice_outcome >= 4:
+        for led in range(59 , 60):
             for rows in range(2 , 5):
                 leds[led + rows * 60] = (255 , 255 , 0)
         client.put_pixels(leds)
@@ -409,7 +409,9 @@ for i in range(20):
         print("The number of steps will be: ")
         print(20 * dice_outcome)
         player_two.fd(20 * dice_outcome)
+        sleep(.1)
 
+    
 
 # Animation ===========================================================================================================
 if player_one.pos() >= (300 , 100):

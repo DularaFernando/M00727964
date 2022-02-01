@@ -14,6 +14,6 @@ for hue in range(180):
     b_float = rgb_fractional[2]
 
     rgb = (r_float*255, g_float*255, b_float*255) #make new tuple with corrected values
-    client.put_pixels([rgb]*-120) #send out
+    client.put_pixels([rgb]*120) #send out
 
     sleep(0.05) #20ms 

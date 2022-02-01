@@ -37,7 +37,8 @@ player_two.goto(-200 , -100)
 dice = random.randint(1 , 6)
 dice_outcome = dice
 print(dice)
-for i in range(10):
+
+for i in range(20):
     if player_one.pos() >= (300 , 100):
         print("Player One Wins!")
         break
@@ -51,11 +52,6 @@ for i in range(10):
                     leds[led + rows * 60] = (255 , 255 , 0)
         client.put_pixels(leds)
         sleep(5)
-        for led in range(0,1):
-            for rows in range(2 , 5):
-                if dice >= 3:
-                    leds[led + rows * 60] = (0 , 0 , 0)
-        client.put_pixels(leds)
         dice = random.randint(1 , 6)  # 6-sides dice random
         player_one_turn = input("Press 'Enter' to roll the die ")
         dice_outcome = dice
@@ -71,6 +67,14 @@ for i in range(10):
         print("The number of steps will be: ")
         print(20 * dice_outcome)
         player_two.fd(20 * dice_outcome)
+
+    else:
+        for led in range(0,1):
+            for rows in range(2 , 5):
+                if dice < 3:
+                    leds[led + rows * 60] = (0 , 255 , 0)
+        client.put_pixels(leds)
+        sleep(.1)
 
 
 

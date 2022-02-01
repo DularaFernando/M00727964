@@ -46,10 +46,6 @@ for i in range(10):
     else:
             player_one_turn = input("Press 'Enter' to roll the die ")
             die_outcome = random.choice(die)
-            #if die_outcome >= 3: #i need add an animation here when the game is running and i am not sure how
-         #       leds[led+rows*60] = (0,255,0)# connect opc inside else. 
-       # #client.put_pixels(leds)
-       # sleep(.1)
             print("The result of the die roll is: ")
             print(die_outcome)
             print("The number of steps will be: ")
@@ -709,4 +705,6 @@ for hue in range(300,360):
         leds[hue]=rgb
         client.put_pixels(leds) #send out
 
-        sleep(0.01) #20ms 
+        sleep(0.01) #20ms
+
+        

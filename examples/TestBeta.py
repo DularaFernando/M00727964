@@ -367,8 +367,10 @@ for i in range(20):
         for led in range(59 , 60):
             for rows in range(2 , 5):
                 leds[led + rows * 60] = (255 , 255 , 0)
-        client.put_pixels(leds)
-        sleep(5)
+        for i in range(10):
+            client.put_pixels(leds)
+
+            sleep(0.02)
         dice = random.randint(1 , 6)  # 6-sides dice random
         player_one_turn = input("Press 'Enter' to roll the die ")
         dice_outcome = dice
@@ -391,8 +393,10 @@ for i in range(20):
         for led in range(0 , 1):
             for rows in range(2 , 5):
                 leds[led + rows * 60] = (0 , 255 , 0)
-        client.put_pixels(leds)
-        sleep(.1)
+        for i in range(10):
+            client.put_pixels(leds)
+
+            sleep(0.02)
         dice = random.randint(1 , 6)  # 6-sides dice random
         player_one_turn = input("Press 'Enter' to roll the die ")
         dice_outcome = dice

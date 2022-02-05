@@ -264,6 +264,43 @@ def N():
     client.put_pixels(leds)
     sleep(.1)
 
+def S():
+    for led in range(51 , 54):  # S
+        for rows in range(2 , 3):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(52 , 53):  # S
+        for rows in range(3 , 4):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(51 , 54):  # S
+        for rows in range(4 , 5):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+
+def TWO():
+    for led in range(28 , 32):  # 2
+        for rows in range(2 , 3):
+            if player_two.pos() >= (300 , -100):
+                leds[led + rows * 60] = (255 , 255 , 255)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(29 , 31):  # 2
+        for rows in range(2 , 5):
+            if player_two.pos() >= (300 , -100):
+                leds[led + rows * 60] = (255 , 255 , 255)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(28 , 32):  # 2
+        for rows in range(4 , 5):
+            if player_two.pos() >= (300 , -100):
+                leds[led + rows * 60] = (255 , 255 , 255)
+    client.put_pixels(leds)
+    sleep(.1)
+    
 def N1():
     for led in range(10 , 11):  # N
         for rows in range(2 , 5):
@@ -324,19 +361,19 @@ def C1():
             leds[led + rows * 60] = (255 , 255 , 0)
     client.put_pixels(leds)
     sleep(.1)
-    
-def E1():
-    for led in range(24 , 27):  # E
+
+def E3():
+    for led in range(25 , 28):  # I
         for rows in range(2 , 3):
             leds[led + rows * 60] = (255 , 255 , 0)
     client.put_pixels(leds)
     sleep(.1)
-    for led in range(24 , 26):  # E
+    for led in range(25 , 27):  # I
         for rows in range(3 , 4):
             leds[led + rows * 60] = (255 , 255 , 0)
     client.put_pixels(leds)
     sleep(.1)
-    for led in range(24 , 27):  # E
+    for led in range(25 , 28):  # I
         for rows in range(4 , 5):
             leds[led + rows * 60] = (255 , 255 , 0)
     client.put_pixels(leds)
@@ -363,102 +400,242 @@ def O1():
             leds[led + rows * 60] = (255 , 255 , 0)
     client.put_pixels(leds)
     sleep(.1)
-
-def N2():
-    for led in range(34 , 35):  # N
+    
+def R():
+    for led in range(32 , 33):  # E
         for rows in range(2 , 5):
             leds[led + rows * 60] = (255 , 255 , 0)
     client.put_pixels(leds)
     sleep(.1)
-    for led in range(35 , 36):  # N
+    for led in range(33 , 35):  # E
         for rows in range(2 , 3):
             leds[led + rows * 60] = (255 , 255 , 0)
     client.put_pixels(leds)
     sleep(.1)
-    for led in range(36 , 37):  # N
+    for led in range(33 , 34):  # E
         for rows in range(3 , 4):
             leds[led + rows * 60] = (255 , 255 , 0)
     client.put_pixels(leds)
     sleep(.1)
-    for led in range(37 , 38):  # N
-        for rows in range(3 , 5):
+    for led in range(34 , 35):  # E
+        for rows in range(4 , 5):
             leds[led + rows * 60] = (255 , 255 , 0)
     client.put_pixels(leds)
     sleep(.1)
-    for led in range(38 , 39):  # N
+
+def O():                                                  
+    for led in range(36 , 37):                                  
         for rows in range(2 , 5):
             leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(37 , 38):  # E
+        for rows in range(2 , 3):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(38 , 39):  # E
+        for rows in range(2 , 5):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(37 , 38):  # E
+        for rows in range(4 , 5):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+
+def L1():                                                    
+    for led in range(40 , 41):                                  
+        for rows in range(2 , 5):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(41 , 43):  # E
+        for rows in range(4 , 5):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+
+def L2():                                                     
+    for led in range(44 , 45):                                  
+        for rows in range(2 , 5):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(45 , 47):  # E
+        for rows in range(4 , 5):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+
+
+
+def n():
+    for led in range(10 , 11):  # N
+        for rows in range(2 , 5):
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(11 , 12):  # N
+        for rows in range(2 , 3):
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(12 , 13):  # N
+        for rows in range(3 , 4):
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(13 , 14):  # N
+        for rows in range(3 , 5):
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(14 , 15):  # N
+        for rows in range(2 , 5):
+            leds[led + rows * 60] = (0 , 0 , 0)
     client.put_pixels(leds)
     sleep(.1)
     
-def E1():
-    for led in range(39 , 42):  # E
+def i1():
+    for led in range(16 , 19):  # I
         for rows in range(2 , 3):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (0 , 0 , 0)
     client.put_pixels(leds)
     sleep(.1)
-    for led in range(39 , 41):  # E
+    for led in range(17 , 18):  # I
         for rows in range(3 , 4):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (0 , 0 , 0)
     client.put_pixels(leds)
     sleep(.1)
-    for led in range(39 , 42):  # E
+    for led in range(16 , 19):  # I
         for rows in range(4 , 5):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    
+def c1():
+    for led in range(20 , 24):  # I
+        for rows in range(2 , 3):
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(20 , 21):  # I
+        for rows in range(3 , 4):
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(20 , 24):  # I
+        for rows in range(4 , 5):
+            leds[led + rows * 60] = (0 , 0 , 0)
     client.put_pixels(leds)
     sleep(.1)
 
-def E2():
-    for led in range(37 , 40):  # E
+def e3():
+    for led in range(25 , 28):  # I
         for rows in range(2 , 3):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (0 , 0 , 0)
     client.put_pixels(leds)
     sleep(.1)
-    for led in range(37 , 39):  # E
+    for led in range(25 , 27):  # I
         for rows in range(3 , 4):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (0 , 0 , 0)
     client.put_pixels(leds)
     sleep(.1)
-    for led in range(37 , 40):  # E
+    for led in range(25 , 28):  # I
         for rows in range(4 , 5):
-            leds[led + rows * 60] = (255 , 255 , 0)
-    client.put_pixels(leds)
-    sleep(.1)    
-
-def S():
-    for led in range(51 , 54):  # S
-        for rows in range(2 , 3):
-            leds[led + rows * 60] = (255 , 255 , 0)
-    client.put_pixels(leds)
-    sleep(.1)
-    for led in range(52 , 53):  # S
-        for rows in range(3 , 4):
-            leds[led + rows * 60] = (255 , 255 , 0)
-    client.put_pixels(leds)
-    sleep(.1)
-    for led in range(51 , 54):  # S
-        for rows in range(4 , 5):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (0 , 0 , 0)
     client.put_pixels(leds)
     sleep(.1)
 
-def TWO():
-    for led in range(28 , 32):  # 2
+def o1():
+    for led in range(29 , 31):  # E
         for rows in range(2 , 3):
-            if player_two.pos() >= (300 , -100):
-                leds[led + rows * 60] = (255 , 255 , 255)
+            leds[led + rows * 60] = (0 , 0 , 0)
     client.put_pixels(leds)
     sleep(.1)
-    for led in range(29 , 31):  # 2
+    for led in range(28 , 29):  # E
+        for rows in range(3 , 4):
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(32 , 33):  # E
+        for rows in range(3 , 4):
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(29 , 31):  # E
+        for rows in range(4 , 5):
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    
+def r():
+    for led in range(32 , 33):  # E
         for rows in range(2 , 5):
-            if player_two.pos() >= (300 , -100):
-                leds[led + rows * 60] = (255 , 255 , 255)
+            leds[led + rows * 60] = (0 , 0 , 0)
     client.put_pixels(leds)
     sleep(.1)
-    for led in range(28 , 32):  # 2
+    for led in range(33 , 35):  # E
+        for rows in range(2 , 3):
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(33 , 34):  # E
+        for rows in range(3 , 4):
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(34 , 35):  # E
         for rows in range(4 , 5):
-            if player_two.pos() >= (300 , -100):
-                leds[led + rows * 60] = (255 , 255 , 255)
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+
+def o():
+    for led in range(36 , 37):                                  
+        for rows in range(2 , 5):
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(37 , 38):  # E
+        for rows in range(2 , 3):
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(38 , 39):  # E
+        for rows in range(2 , 5):
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(37 , 38):  # E
+        for rows in range(4 , 5):
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+
+def l1():
+    for led in range(40 , 41):                                  
+        for rows in range(2 , 5):
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(41 , 43):  # E
+        for rows in range(4 , 5):
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+
+def l2():
+    for led in range(44 , 45):                                  
+        for rows in range(2 , 5):
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(45 , 47):  # E
+        for rows in range(4 , 5):
+            leds[led + rows * 60] = (0 , 0 , 0)
     client.put_pixels(leds)
     sleep(.1)
 
@@ -526,10 +703,11 @@ for i in range(20):
         N1()
         I1()
         C1()
-        E1()
-        O1()
-        N2()
-        E2()
+        E3()
+        R()
+        O()
+        L1()
+        L2()
         for i in range(10):
             client.put_pixels(leds)
 
@@ -553,8 +731,16 @@ for i in range(20):
 
 
     else:
-        N()
-        I()
+        n()
+        i1()
+        c1()
+        e3()
+        r()
+        o()
+        l1()
+        l2()
+        R()
+        
         for i in range(10):
             client.put_pixels(leds)
 
@@ -581,6 +767,14 @@ for i in range(20):
 
 # Animation ===========================================================================================================
 if player_one.pos() >= (300 , 100):
+    n()
+    i1()
+    c1()
+    e3()
+    r()
+    o()
+    l1()
+    l2()
     rainbow_1_1()
     P()
     L()
@@ -594,9 +788,18 @@ if player_one.pos() >= (300 , 100):
     I()
     N()
     S()
-    rainbow_1_2()
+  #  rainbow_1_2()
 
-elif player_two.pos() >= (300 , -100):
+else:
+    player_two.pos() >= (300 , -100)
+    n()
+    i1()
+    c1()
+    e3()
+    r()
+    o()
+    l1()
+    l2()
     rainbow_2_1()
     P()
     L()

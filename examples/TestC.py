@@ -401,7 +401,7 @@ def O1():
     client.put_pixels(leds)
     sleep(.1)
     
-def R():
+def R1():
     for led in range(32 , 33):  # E
         for rows in range(2 , 5):
             leds[led + rows * 60] = (255 , 255 , 0)
@@ -654,16 +654,6 @@ def rainbow_1_1():
 
             sleep(0.03)  # 20ms
 
-def rainbow_1_2():
-    for hue in range(300 , 360):
-        rgb_fractional = colorsys.hsv_to_rgb(hue / 360.0 , s , v)  # colorsys returns floats between 0 and 1
-        r_float = rgb_fractional[0]  # extract said floating point numbers
-        g_float = rgb_fractional[1]
-        b_float = rgb_fractional[2]
-        rgb = (r_float * 255 , g_float * 255 , b_float * 255)  # make new tuple with corrected values
-        client.put_pixels([rgb] * 120)  # send out
-        sleep(0.01)  # 20ms
-
 def rainbow_2_1():
     for hue in range(120):
         if player_two.pos() >= (300 , -100):
@@ -704,7 +694,7 @@ for i in range(20):
         I1()
         C1()
         E3()
-        R()
+        R1()
         O()
         L1()
         L2()
@@ -739,7 +729,7 @@ for i in range(20):
         o()
         l1()
         l2()
-        R()
+        R1()
         
         for i in range(10):
             client.put_pixels(leds)
@@ -767,14 +757,7 @@ for i in range(20):
 
 # Animation ===========================================================================================================
 if player_one.pos() >= (300 , 100):
-    n()
-    i1()
-    c1()
-    e3()
-    r()
-    o()
-    l1()
-    l2()
+    leds = [(0 , 0 , 0)]*360
     rainbow_1_1()
     P()
     L()
@@ -788,18 +771,14 @@ if player_one.pos() >= (300 , 100):
     I()
     N()
     S()
+    leds = [(0 , 0 , 0)]*360
+    P()
+    W()
   #  rainbow_1_2()
 
 else:
     player_two.pos() >= (300 , -100)
-    n()
-    i1()
-    c1()
-    e3()
-    r()
-    o()
-    l1()
-    l2()
+    leds = [(0 , 0 , 0)]*360
     rainbow_2_1()
     P()
     L()
@@ -814,4 +793,7 @@ else:
     N()
     S()
     rainbow_2_2()
+    leds = [(0 , 0 , 0)]*360
+    L()
+    I()
 # Animation Player  Win ================================================================================================

@@ -469,6 +469,71 @@ def L2():
     client.put_pixels(leds)
     sleep(.1)
 
+def B():
+    for led in range(10 , 11):  # N
+        for rows in range(2 , 5):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(11 , 12):  # N
+        for rows in range(2 , 5):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(12 , 13):  # N
+        for rows in range(2 , 5):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(12 , 13):  # N
+        for rows in range(3 , 4):
+            leds[led + rows * 60] = (0 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+
+def AForBad():
+    for led in range(14 , 15):  # A
+        for rows in range(4 , 5):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(15 , 18):  # A
+        for rows in range(3 , 4):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(16 , 17):  # A
+        for rows in range(2 , 3):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(18 , 19):  # A
+        for rows in range(4 , 5):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+
+def DForBad():
+    for led in range(20 , 23):  # A
+        for rows in range(2 , 3):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(21 , 22):  # A
+        for rows in range(3 , 4):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(20 , 23):  # A
+        for rows in range(4 , 5):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
+    for led in range(23 , 24):  # A
+        for rows in range(3 , 4):
+            leds[led + rows * 60] = (255 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.1)
 
 
 def n():
@@ -730,6 +795,14 @@ for i in range(20):
         l1()
         l2()
         R1()
+        B()
+        AForBad()
+        DForBad()
+        R1()
+        O()
+        L1()
+        L2()
+
         
         for i in range(10):
             client.put_pixels(leds)

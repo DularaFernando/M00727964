@@ -18,8 +18,6 @@ while True:
         leds[led + 6] = (0,0,255)
         leds[led + 7] = (255,0,255)
 
-     #   if leds == 255:
-      #      leds = 0
         client.put_pixels(leds)
         sleep(.1)
         led = led + 1

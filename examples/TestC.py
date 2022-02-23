@@ -527,235 +527,6 @@ def DForBad():
     client.put_pixels(leds)
     sleep(.01)
 
-def AForBad1():
-    for led in range(14 , 15):  # A
-        for rows in range(4 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(15 , 18):  # A
-        for rows in range(3 , 4):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(16 , 17):  # A
-        for rows in range(2 , 3):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(18 , 19):  # A
-        for rows in range(4 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-
-def B1():
-    for led in range(10 , 11):  # N
-        for rows in range(2 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(11 , 12):  # N
-        for rows in range(2 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(12 , 13):  # N
-        for rows in range(2 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-
-def DForBad1():
-    for led in range(20 , 23):  # A
-        for rows in range(2 , 3):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(21 , 22):  # A
-        for rows in range(3 , 4):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(20 , 23):  # A
-        for rows in range(4 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(23 , 24):  # A
-        for rows in range(3 , 4):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-
-def n():
-    for led in range(10 , 11):  # Nblack
-        for rows in range(2 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(11 , 12):  # Nblack
-        for rows in range(2 , 3):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(12 , 13):  # Nblack
-        for rows in range(3 , 4):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(13 , 14):  # Nblack
-        for rows in range(3 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(14 , 15):  # Nblack
-        for rows in range(2 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    
-def i1():
-    for led in range(16 , 19):  # Iblack
-        for rows in range(2 , 3):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(17 , 18):  # Iblack
-        for rows in range(3 , 4):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(16 , 19):  # Iblack
-        for rows in range(4 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    
-def c1():
-    for led in range(20 , 24):  # Cblack
-        for rows in range(2 , 3):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(20 , 21):  # Cblack
-        for rows in range(3 , 4):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(20 , 24):  # Cblack
-        for rows in range(4 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-
-def e3():
-    for led in range(25 , 28):  # Eblack
-        for rows in range(2 , 3):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(25 , 27):  # Eblack
-        for rows in range(3 , 4):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(25 , 28):  # Eblack
-        for rows in range(4 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-
-def o1():
-    for led in range(29 , 31):  # oblack
-        for rows in range(2 , 3):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(28 , 29):  # oblack
-        for rows in range(3 , 4):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(32 , 33):  # oblack
-        for rows in range(3 , 4):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(29 , 31):  # oblack
-        for rows in range(4 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    
-def r():
-    for led in range(32 , 33):  # rblack
-        for rows in range(2 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(33 , 35):  # rblack
-        for rows in range(2 , 3):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(33 , 34):  # rblack
-        for rows in range(3 , 4):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(34 , 35):  # rblack
-        for rows in range(4 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-
-def o():
-    for led in range(36 , 37):                                  
-        for rows in range(2 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(37 , 38):  # oblack
-        for rows in range(2 , 3):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(38 , 39):  # oblack
-        for rows in range(2 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(37 , 38):  # oblack
-        for rows in range(4 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-
-def l1():
-    for led in range(40 , 41):                                  
-        for rows in range(2 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(41 , 43):  # lblack
-        for rows in range(4 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-
-def l2():
-    for led in range(44 , 45):                                  
-        for rows in range(2 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-    for led in range(45 , 47):  # lblack
-        for rows in range(4 , 5):
-            leds[led + rows * 60] = (0 , 0 , 0)
-    client.put_pixels(leds)
-    sleep(.01)
-
 def smileface1():
     for led in range(3 , 5):                                  
         for rows in range(2 , 3):
@@ -820,7 +591,65 @@ def smileface2():
     client.put_pixels(leds)
     sleep(.01)
 
+def sadface1():
+    for led in range(3 , 5):                                  
+        for rows in range(2 , 3):
+            leds[led + rows * 60] = (225 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.01)
+    for led in range(6 , 8):  # oblack
+        for rows in range(2 , 3):
+            leds[led + rows * 60] = (225 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.01)
+    for led in range(5 , 6):  # oblack
+         for rows in range(3 , 4):
+            leds[led + rows * 60] = (225 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.01)
+    for led in range(3 , 8):  # oblack
+         for rows in range(4 , 5):
+            leds[led + rows * 60] = (225 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.01)
+
+def sadface2():
+    for led in range(51 , 53):                                  
+        for rows in range(2 , 3):
+            leds[led + rows * 60] = (225 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.01)
+    for led in range(54 , 56):  # oblack
+        for rows in range(2 , 3):
+            leds[led + rows * 60] = (225 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.01)
+    for led in range(53 , 54):  # oblack
+         for rows in range(3 , 4):
+            leds[led + rows * 60] = (225 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.01)
+    for led in range(51 , 56):  # oblack
+         for rows in range(4 , 5):
+            leds[led + rows * 60] = (225 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.01)
+
 # ====================================Def of rainbows==================================================================
+def snake():
+    for led in range (113):
+        leds = [(255,255,255)]*120
+        leds[led] = (0,0,255)
+        leds[led + 1] = (255,0,255)
+        leds[led + 3] = (0,0,255)
+        leds[led + 4] = (255,0,255)
+        leds[led + 6] = (0,0,255)
+        leds[led + 7] = (255,0,255)
+
+        client.put_pixels(leds)
+        sleep(.1)
+        led = led + 1
+
 def rainbow_1_1():
     for hue in range(120):
         rgb_fractional = colorsys.hsv_to_rgb(random.randint(hue - 10 , hue + 10) / 360.0 , s , v)  # colorsys returns floats between 0 and 1
@@ -862,18 +691,24 @@ def rainbow_2_2():
 def row():
     led = 0
     while led < 30:  # scroll all rows at the same time
-        for rows in range(1, 2):
+        for rows in range(0, 2):
             leds[59 - led + rows * 60] = (91, 24, 101)  # midnight
-        for rows in range(1, 2):  # first three rows left to right
+        for rows in range(0, 2):  # first three rows left to right
             leds[led + rows * 60] = (91, 24, 101)  # midnight
-        for rows in range(3, 4):
+        for rows in range(2, 4):
             leds[29 - led + rows * 60] = (91, 24, 101)  # midnight
-        for rows in range(3, 4):
+        for rows in range(2, 4):
             leds[29 + led + rows * 60] = (91, 24, 101)  # midnight
-        for rows in range(3, 4):
+        for rows in range(2, 4):
             leds[59 - led + rows * 60] = (91, 24, 101)  # midnight
-        for rows in range(3, 4):  # first three rows left to right
+        for rows in range(2, 4):  # first three rows left to right
             leds[led + rows * 60] = (91, 24, 101)  # midnight
+        for rows in range(4, 6):
+            leds[59 - led + rows * 60] = (91, 24, 101)  # midnight
+        for rows in range(4, 6):  # first three rows left to right
+            leds[led + rows * 60] = (91, 24, 101)  # midnight
+        for rows in range(2, 4):
+            leds[29 - led + rows * 60] = (91, 24, 101)  # midnight
         
         client.put_pixels(leds)
         sleep(.1)
@@ -883,9 +718,35 @@ def row1():
     led = 0
     while led < 30:  # scroll all rows at the same time
         for rows in range(1, 2):
-            leds[59 - led + rows * 60] = (0, 0, 0)  # midnight
-        for rows in range(1, 2):  # first three rows left to right
+            leds[59 - led + rows * 60] = (0, 0, 0)  # midnight # first three rows left to right
             leds[led + rows * 60] = (0, 0, 0)  # midnight
+        for rows in range(3, 4):
+            leds[59 - led + rows * 60] = (0, 0, 0)  # midnight  # first three rows left to right
+            leds[led + rows * 60] = (0, 0, 0)  # midnight
+        for rows in range(5, 6):
+            leds[59 - led + rows * 60] = (0, 0, 0)  # midnight # first three rows left to right
+            leds[led + rows * 60] = (0, 0, 0)  # midnight
+        
+        for rows in range(0, 1):
+            leds[30 + led + rows * 60] = (0, 0, 0)  # midnight# first three rows left to right
+            leds[29 - led + rows * 60] = (0, 0, 0)  # midnight
+        for rows in range(2, 3):
+            leds[30 + led + rows * 60] = (0, 0, 0)  # midnight# first three rows left to right
+            leds[29 - led + rows * 60] = (0, 0, 0)  # midnight
+        for rows in range(4, 5):
+            leds[30 + led + rows * 60] = (0, 0, 0)  # midnight # first three rows left to right
+            leds[29 - led + rows * 60] = (0, 0, 0)  # midnight
+        client.put_pixels(leds)
+        sleep(.1)
+        led = led + 2
+
+def row2():
+    led = 0
+    while led < 30:
+        for rows in range(6):
+            leds[59 - led + rows * 60] = (0, 0, 0)
+            leds[led + rows * 60] = (0, 0, 0)
+
         client.put_pixels(leds)
         sleep(.1)
         led = led + 2
@@ -899,7 +760,7 @@ for i in range(20):
         break
     elif dice_outcome >= 4:
         leds = [(0 , 0 , 0)]*360
-        for led in range(120):  # pick out indeces: led = 0,1,2,3...
+        for led in range(60):  # pick out indeces: led = 0,1,2,3...
             leds[led] = (44, 87, 132) #bdazzled blue
             sleep(.001)
             client.put_pixels(leds)
@@ -940,18 +801,8 @@ for i in range(20):
 
 
     else:        
-        n()
-        i1()
-        c1()
-        e3()
-        B1()
-        AForBad1()
-        DForBad1()
-        r()
-        o()
-        l1()
-        l2()
-        for led in range(120):  # pick out indeces: led = 0,1,2,3...
+        leds = [(0 , 0 , 0)]*360
+        for led in range(60):  # pick out indeces: led = 0,1,2,3...
             leds[led] = (225, 0, 0) #bdazzled blue
             sleep(.001)
             client.put_pixels(leds)
@@ -959,7 +810,7 @@ for i in range(20):
             leds[119 - led] = (225, 0, 0) #bdazzled blue
             sleep(.001)
             client.put_pixels(leds)
-        leds = [(0 , 0 , 0)]*360
+        sadface1()
         B()
         AForBad()
         DForBad()
@@ -967,6 +818,7 @@ for i in range(20):
         O()
         L1()
         L2()
+        sadface2()
         for i in range(10):
             client.put_pixels(leds)
 
@@ -1006,10 +858,13 @@ if player_one.pos() >= (200 , 100):
     I()
     N()
     S()
+    rainbow_2_2()
     sleep(0.4)
     leds = [(0 , 0 , 0)]*360
     row()
     row1()
+    row2()
+    snake()
 
  #   for led in range(60):  # pick out indeces: led = 0,1,2,3...
  #       leds[led] = (44, 87, 132) #bdazzled blue
@@ -1040,6 +895,8 @@ else:
     leds = [(0 , 0 , 0)]*360
     row()
     row1()
+    row2()
+    snake()
 
 # Animation Player  Win ================================================================================================
 

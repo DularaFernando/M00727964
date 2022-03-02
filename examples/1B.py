@@ -8,18 +8,25 @@ client.put_pixels(leds)
 client.put_pixels(leds)
 
 
-while True:
-    for led in range (113):
-        leds = [(255,255,255)]*120
-        leds[led] = (0,0,255)
-        leds[led + 1] = (255,0,255)
-        leds[led + 3] = (0,0,255)
-        leds[led + 4] = (255,0,255)
-        leds[led + 6] = (0,0,255)
-        leds[led + 7] = (255,0,255)
+def sadface1(x):
+    for led in range(3+x , 5+x):                                  
+        for rows in range(2 , 3):
+            leds[led + rows * 60] = (225 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.01)
+    for led in range(6+x , 8+x):                 # oblack
+        for rows in range(2 , 3):
+            leds[led + rows * 60] = (225 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.01)
+    for led in range(5+x , 6+x):                 # oblack
+         for rows in range(3 , 4):
+            leds[led + rows * 60] = (225 , 0 , 0)
+    client.put_pixels(leds)
+    sleep(.01)
+    for led in range(3+x , 8+x):                 # oblack
+         for rows in range(4 , 5):
+            leds[led + rows * 60] = (225 , 255 , 0)
+    client.put_pixels(leds)
+    sleep(.01)
 
-        client.put_pixels(leds)
-        sleep(.1)
-        led = led + 1
-
-    break

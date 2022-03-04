@@ -18,7 +18,7 @@ lastAnimationInGame, 1C, Sad_face1 and Smile_face1 are some sub files i used to 
 
 step 1: Go to this link - https://github.com/DularaFernando/M00727964/tree/main/examples
 step 2: Open turtle1 ( https://github.com/DularaFernando/M00727964/blob/main/examples/turtle1.py )
-step 3: Save it in python IDEL, pycharm or etc.
+step 3: Save it in python IDEL, pycharm or etc. (version need to be 3.0 or higher)
 step 4: Open the OPC by using this link ( https://github.com/DularaFernando/M00727964/tree/main/Fadecandy_2400-main/simulator/bin)
 step 5: Run the python code.
 

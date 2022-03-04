@@ -14,25 +14,33 @@ The final python file is named as turtle1. In my examples folder there are some 
 of the code and do the changes in sub file before adding to the main file. Random iteration, 1stSnakeAnimation, 
 lastAnimationInGame, 1C, Sad_face1 and Smile_face1 are some sub files i used to do testing before adding to the main file. 
 
+----------------------steps to open the game----------------------
+
+step 1: Go to this link - https://github.com/DularaFernando/M00727964/tree/main/examples
+step 2: Open turtle1 ( https://github.com/DularaFernando/M00727964/blob/main/examples/turtle1.py )
+step 3: Save it in python IDEL, pycharm or etc.
+step 4: Open the OPC by using this link ( https://github.com/DularaFernando/M00727964/tree/main/Fadecandy_2400-main/simulator/bin)
+step 5: Run the python code.
+
 The game UI consist with 2 different color turtles and with 2 finishing circles. To play the game we need to
 press '1' and enter to see the movements of the turtles, and both of the turtles are getting random values
 from 6 a side dice to move forward. The OPC is connected with turtle 2(blue), so if the result of dice is less
 than 4, there going be red color animation in 1st and 2nd row from left to right and right to left. In the last row 
 there is a random color animation from 29th led to left and 30th led to right. In the rest of the rows there going be 
-two sad faces and a text as 'BAD ROLL'. If the value is 4 or more, there going be bdazzled blue color animation in 1st 
+two sad faces and a text as 'BAD ROLL'; If the value is 4 or more, there going be bdazzled blue color animation in 1st 
 and 2nd row from left to right and right to left. In the last row there is a random color animation from left to right. 
 In the rest of the rows there going be two smile faces and a text as 'NICE ROLL'. Unitl one of the players win, this 
 animations are happening. When player 1 or player 2 win, the animations are quite similar the only difference is, when 
-player 1 wins there is a text as 'PLAYER 1 WINS' and 'PLAYER 11 WINS' for player 2. In 1st and 2nd rows there is an 
+player 1 wins there is a text as 'PLAYER I WINS' and 'PLAYER II WINS' for player 2. In 1st and 2nd rows there is an 
 animation with random colors from left to right, led by led. After the 1st row is complete then it start with 2nd row. 
-In the last line also there is a random color line animation for left to right.
+In the last line there is a random color line animation for left to right.
 
 After that there is a DarkOrchid color line animation happening on all 6 rows. Then by using black color line animations, 
 clearing the OPC. After clearing the OPC screen, againg making all 360 leds for luminuos yellow and by using 2 snakes with 
 pink and blue color, clearing OPC one after another, first, the 1st 3 lines will make black by top snake from coming left 
 to right and after that the bottom snake will clear the screen from right to left. Then there is an animation of a snake 
 with 5 purple color leds and the last led is random so when the animation is done the whole OPC will be random colors, after
-the animation i created 2 animations ‘END’ in black color inside the randoms colors screen. In the end, there is a 
+the animation, i created 2 animations ‘END’ in black color inside the randoms colors screen. In the end, there is a 
 random iteration and making the screen black.
 
 In the console when we run the code, there going to be two options; '1' to run the game and 'Q' to quit the game but if i 

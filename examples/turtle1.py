@@ -46,7 +46,7 @@ print('Starting roll:'),print(dice_outcome)
 def P():                                       #creating letter P
     for led in range(0 , 1):
         for rows in range(2 , 5):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (255 , 255 , 0)     #yellow
     client.put_pixels(leds)
     sleep(.01)
     for led in range(1 , 3):                 
@@ -69,7 +69,7 @@ def P():                                       #creating letter P
 def L(x):                                        #creating letter L
     for led in range(4+x , 5+x):                 
         for rows in range(2 , 5):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (255 , 255 , 0)     #yellow
     client.put_pixels(leds)
     sleep(.01)
     for led in range(5+x , 7+x):                 
@@ -82,7 +82,7 @@ def L(x):                                        #creating letter L
 def A(x):                                        #creating letter A
     for led in range(8+x , 9+x):                 
         for rows in range(4 , 5):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (255 , 255 , 0)     #yellow
     client.put_pixels(leds)
     sleep(.01)
     for led in range(9+x , 12+x):                
@@ -105,7 +105,7 @@ def A(x):                                        #creating letter A
 def Y():                                         #creating letter Y
     for led in range(14 , 15):               
         for rows in range(2 , 4):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (255 , 255 , 0)     #yellow
     client.put_pixels(leds)
     sleep(.01)
     for led in range(15 , 16):               
@@ -128,7 +128,7 @@ def Y():                                         #creating letter Y
 def E(x):                                        #creating letter E
     for led in range(18+x , 21+x):               
         for rows in range(2 , 3):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (255 , 255 , 0)     #yellow
     client.put_pixels(leds)
     sleep(.01)
     for led in range(18+x , 20+x):               
@@ -146,7 +146,7 @@ def E(x):                                        #creating letter E
 def R(x):                                        #creating letter R
     for led in range(22+x , 25+x):               
         for rows in range(2 , 3):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (255 , 255 , 0)     #yellow
     client.put_pixels(leds)
     sleep(.01)
     for led in range(22+x , 24+x):               
@@ -169,7 +169,7 @@ def R(x):                                        #creating letter R
 def ONE():                                       #creating number 1
     for led in range(28 , 31):               
         for rows in range(2 , 3):
-            leds[led + rows * 60] = (255 , 200 , 0)
+            leds[led + rows * 60] = (255 , 200 , 0)     #yellow
     client.put_pixels(leds)
     sleep(.01)
     for led in range(29 , 30):               
@@ -187,7 +187,7 @@ def ONE():                                       #creating number 1
 def W():                                         #creating letter W
     for led in range(33 , 34):              
         for rows in range(2 , 3):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (255 , 255 , 0)     #yellow
     client.put_pixels(leds)
     sleep(.01)
     for led in range(34 , 35):               
@@ -224,7 +224,7 @@ def W():                                         #creating letter W
 def S():                                         #creating letter S
     for led in range(51 , 54):               
         for rows in range(2 , 3):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (255 , 255 , 0)     #yellow
     client.put_pixels(leds)
     sleep(.01)
     for led in range(52 , 53):               
@@ -241,7 +241,7 @@ def S():                                         #creating letter S
 def TWO():                                       #creating number 2
     for led in range(28 , 32):               
         for rows in range(2 , 3):
-            leds[led + rows * 60] = (255 , 255 , 255)
+            leds[led + rows * 60] = (255 , 255 , 255)   #yellow
     client.put_pixels(leds)
     sleep(.01)
     for led in range(29 , 31):               
@@ -258,7 +258,7 @@ def TWO():                                       #creating number 2
 def N(x):                                       #creating letter N
     for led in range(10+x , 11+x):               
         for rows in range(2 , 5):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (255 , 255 , 0)     #yellow
     client.put_pixels(leds)
     sleep(.01)
     for led in range(11+x , 12+x):               
@@ -285,7 +285,7 @@ def N(x):                                       #creating letter N
 def I(x):                                        #creating letter I
     for led in range(16+x , 19+x):               
         for rows in range(2 , 3):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (255 , 255 , 0)     #yellow
     client.put_pixels(leds)
     sleep(.01)
     for led in range(17+x , 18+x):               
@@ -302,7 +302,7 @@ def I(x):                                        #creating letter I
 def C():                                         #creating letter C
     for led in range(20 , 24):               
         for rows in range(2 , 3):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (255 , 255 , 0)     #yellow
     client.put_pixels(leds)
     sleep(.01)
     for led in range(20 , 21):               
@@ -319,7 +319,7 @@ def C():                                         #creating letter C
 def O(x):                                        #creating letter O
     for led in range(29+x , 31+x):               
         for rows in range(2 , 3):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (255 , 255 , 0)     #yellow
     client.put_pixels(leds)
     sleep(.01)
     for led in range(28+x , 29+x):               
@@ -341,7 +341,7 @@ def O(x):                                        #creating letter O
 def B():                                         #creating letter B
     for led in range(10 , 11):               
         for rows in range(2 , 5):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (255 , 255 , 0)     #yellow
     client.put_pixels(leds)
     sleep(.01)
     for led in range(11 , 12):               
@@ -358,7 +358,7 @@ def B():                                         #creating letter B
 def DForBad():                                   #creating letter D
     for led in range(20 , 23):               
         for rows in range(2 , 3):
-            leds[led + rows * 60] = (255 , 255 , 0)
+            leds[led + rows * 60] = (255 , 255 , 0)     #yellow
     client.put_pixels(leds)
     sleep(.01)
     for led in range(21 , 22):               
@@ -380,7 +380,7 @@ def DForBad():                                   #creating letter D
 def E1(Y):                                       #creating letter E for end
     for led in range(1+Y , 5+Y):               
         for rows in range(1 , 2):
-            leds[led + rows * 60] = (0 , 0 , 0)
+            leds[led + rows * 60] = (0 , 0 , 0)     #black
     client.put_pixels(leds)
     sleep(.01)
     for led in range(1+Y , 2+Y):               
@@ -402,7 +402,7 @@ def E1(Y):                                       #creating letter E for end
 def N1(Y):                                        #creating letter N for end
     for led in range(6+Y , 7+Y):               
         for rows in range(1 , 6):
-            leds[led + rows * 60] = (0 , 0 , 0)
+            leds[led + rows * 60] = (0 , 0 , 0)     #black
     client.put_pixels(leds)
     sleep(.01)
     for led in range(7+Y , 8+Y):               
@@ -429,7 +429,7 @@ def N1(Y):                                        #creating letter N for end
 def D1(Y):                                       #creating letter D for end
     for led in range(12+Y , 15+Y):               
         for rows in range(1 , 2):
-            leds[led + rows * 60] = (0 , 0 , 0)
+            leds[led + rows * 60] = (0 , 0 , 0)     #black
     client.put_pixels(leds)
     sleep(.01)
     for led in range(12+Y , 15+Y):               
@@ -461,7 +461,7 @@ def D1(Y):                                       #creating letter D for end
 def Q1(Y):                                        #creating letter Q for Quit
     for led in range(4+Y , 5+Y):               
         for rows in range(2 , 4):
-            leds[led + rows * 60] = (225 , 0 , 0)
+            leds[led + rows * 60] = (225 , 0 , 0)       #red
     client.put_pixels(leds)
     sleep(.01)
     for led in range(5+Y , 7+Y):               
@@ -488,7 +488,7 @@ def Q1(Y):                                        #creating letter Q for Quit
 def U1(Y):                                        #creating letter u for Quit
     for led in range(12+Y , 13+Y):               
         for rows in range(1 , 4):
-            leds[led + rows * 60] = (0 , 225 , 0)
+            leds[led + rows * 60] = (0 , 225 , 0)       #green
     client.put_pixels(leds)
     sleep(.01)
     for led in range(13+Y , 15+Y):               
@@ -505,7 +505,7 @@ def U1(Y):                                        #creating letter u for Quit
 def I1(Y):                                        #creating letter i for Quit
     for led in range(17+Y , 21+Y):               
         for rows in range(1 , 2):
-            leds[led + rows * 60] = (0 , 0 , 225)
+            leds[led + rows * 60] = (0 , 0 , 225)       #blue
     client.put_pixels(leds)
     sleep(.01)
     for led in range(18+Y , 20+Y):               
@@ -522,7 +522,7 @@ def I1(Y):                                        #creating letter i for Quit
 def T1(Y):                                        #creating letter t for Quit
     for led in range(22+Y , 26+Y):               
         for rows in range(1 , 2):
-            leds[led + rows * 60] = (0 , 225 , 0)
+            leds[led + rows * 60] = (0 , 225 , 0)       #green
     client.put_pixels(leds)
     sleep(.01)
     for led in range(23+Y , 25+Y):               
@@ -534,7 +534,7 @@ def T1(Y):                                        #creating letter t for Quit
 def smileface(x):                               #creating the smile face
     for led in range(3+x , 5+x):                                  
         for rows in range(2 , 3):
-            leds[led + rows * 60] = (225 , 0 , 0)
+            leds[led + rows * 60] = (225 , 0 , 0)       #red
     client.put_pixels(leds)
     sleep(.01)
     for led in range(6+x , 8+x):                 
@@ -549,7 +549,7 @@ def smileface(x):                               #creating the smile face
     sleep(.01)
     for led in range(3+x , 4+x):                 
         for rows in range(3 , 4):
-            leds[led + rows * 60] = (225 , 255 , 0)
+            leds[led + rows * 60] = (225 , 255 , 0)     #yellow
     client.put_pixels(leds)
     sleep(.01)
     for led in range(4+x , 7+x):                 
@@ -566,7 +566,7 @@ def smileface(x):                               #creating the smile face
 def sadface(x):                                  #creating the sad face
     for led in range(3+x , 5+x):                                  
         for rows in range(2 , 3):
-            leds[led + rows * 60] = (225 , 0 , 0)
+            leds[led + rows * 60] = (225 , 0 , 0)       #red
     client.put_pixels(leds)
     sleep(.01)
     for led in range(6+x , 8+x):                 
@@ -581,7 +581,7 @@ def sadface(x):                                  #creating the sad face
     sleep(.01)
     for led in range(3+x , 8+x):                 
          for rows in range(4 , 5):
-            leds[led + rows * 60] = (225 , 255 , 0)
+            leds[led + rows * 60] = (225 , 255 , 0)     #yellow
     client.put_pixels(leds)
     sleep(.01)
 #------------------------------------------------------------------------------------------------------------------------------------------------
@@ -636,7 +636,7 @@ def rainbow_1_1():
         leds[hue] = rgb
         client.put_pixels(leds)                                                                    # send out
 
-        sleep(0.01)                                                                                # 10ms  
+        sleep(0.01)                                                                                # delay time  
 
 def rainbow_2_2():
     for hue in range(300 , 360):
@@ -649,9 +649,9 @@ def rainbow_2_2():
         leds[hue] = rgb
         client.put_pixels(leds)                                                                    # send out
 
-        sleep(0.01)                                                                                #10ms
+        sleep(0.01)                                                                                #delay time
 
-def row():
+def row():                                                      #random iteration
     led = 0
     while led < 30:                                             # giving a range
         for rows in range(0, 2):
@@ -709,7 +709,7 @@ def row2():
             leds[led + rows * 60] = (0, 0, 0)                   #all 6 rows from left to right led by led
 
         client.put_pixels(leds)
-        sleep(.03)
+        sleep(.05)
         led = led + 2
         
     led = 1                                                     #starting the animation by skipping a led
@@ -719,8 +719,34 @@ def row2():
             leds[led + rows * 60] = (0, 0, 0)                   #all 6 rows from left to right led by led
 
         client.put_pixels(leds)
-        sleep(.03)
+        sleep(.05)
         led = led + 2
+
+def row3():
+    led = 0
+    while led < 30:                                             
+        for rows in range(1, 2):
+            leds[59 - led + rows * 60] = (0, 0, 0)              #2nd row from right to left led by led  #Black
+            leds[led + rows * 60] = (0, 0, 0)                   #2nd row from left to right led by led
+        for rows in range(3, 4):
+            leds[59 - led + rows * 60] = (0, 0, 0)              #4th row from right to left led by led 
+            leds[led + rows * 60] = (0, 0, 0)                   #4th row from left to right led by led 
+        for rows in range(5, 6):
+            leds[59 - led + rows * 60] = (0, 0, 0)              #6th row from right to left led by led 
+            leds[led + rows * 60] = (0, 0, 0)                   #6th row from left to right led by led 
+        
+        for rows in range(0, 1):
+            leds[30 + led + rows * 60] = (0, 0, 0)              #1st row from 30th led to right led by led 
+            leds[29 - led + rows * 60] = (0, 0, 0)              #1st row from 29th led to left led by led 
+        for rows in range(2, 3):
+            leds[30 + led + rows * 60] = (0, 0, 0)              #3rd row from 30th led to right led by led 
+            leds[29 - led + rows * 60] = (0, 0, 0)              #3rd row from 29th led to left led by led 
+        for rows in range(4, 5):
+            leds[30 + led + rows * 60] = (0, 0, 0)              #5th row from 30th led to right led by led 
+            leds[29 - led + rows * 60] = (0, 0, 0)              #5th row from 29th led to left led by led 
+        client.put_pixels(leds)
+        sleep(.05)
+        led = led + 1
         
 def row4():
     led = 0
@@ -747,7 +773,6 @@ for i in range(20):                                             #repeat the acti
     if player_one.pos() >= (200, 100):                          #if player 1 in winning position break the loop,
         print("Player One Wins!")                               #and print 'Player one wins'
         break
-
     elif player_two.pos() >= (200, -100):                       #if player 2 in winning position break the loop,
         print("Player Two Wins!")                               #and print 'Player Two wins'
         break
@@ -772,7 +797,7 @@ for i in range(20):                                             #repeat the acti
                 leds[led] = (44, 87, 132)                       # bdazzled blue  #in 1st row left to right leds one by ne
                 sleep(.001)
                 client.put_pixels(leds)
-
+                
                 leds[119 - led] = (44, 87, 132)                 #in 2nd row leds from right to left one by one                      
                 sleep(.001)
                 client.put_pixels(leds)
@@ -786,7 +811,7 @@ for i in range(20):                                             #repeat the acti
                 leds[led] = (225, 0, 0)                         # red #in 1st row left to right leds one by ne
                 sleep(.001)
                 client.put_pixels(leds)
-
+            
                 leds[119 - led] = (225, 0, 0)                   #in 2nd row leds from right to left one by one                                          
                 sleep(.001)
                 client.put_pixels(leds)
@@ -807,7 +832,7 @@ for i in range(20):                                             #repeat the acti
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Animations when the player1 wins
 if player_one.pos() >= (200 , 100):  
-    leds = [(0 , 0 , 0)]*360
+    leds = [(0 , 0 , 0)]*360                        #defined animations
     rainbow_1_1()
     P(), L(0), A(0), Y(), E(0), R(0)
     ONE()
@@ -817,11 +842,12 @@ if player_one.pos() >= (200 , 100):
     row(), row1(), row2()
     snake1()
     snake2()
-    E1(1), N1(3), D1(5)
+    E1(4), N1(6), D1(8)
     E1(31), N1(33), D1(35)
+    row3()
 # Animations when the player1 wins
 elif player_two.pos() >= (200, -100):
-    leds = [(0 , 0 , 0)]*360
+    leds = [(0 , 0 , 0)]*360                        #defined animations
     rainbow_1_1()
     P(), L(0), A(0), Y(), E(0), R(0)
     TWO()
@@ -833,6 +859,7 @@ elif player_two.pos() >= (200, -100):
     snake2()
     E1(4), N1(6), D1(8)
     E1(34), N1(36), D1(38)
+    row3()
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 

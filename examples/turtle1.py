@@ -625,7 +625,7 @@ def snake2():                                   #create the 2nd snake animation
         sleep(.01)
         led = led + 1
         
-def rainbow_1_1():
+def rainbow_1():
     for hue in range(120):
         rgb_fractional = colorsys.hsv_to_rgb(random.randint(hue - 10 , hue + 10) / 360.0 , s , v)  # colorsys returns floats between 0 and 1
         r_float = rgb_fractional[0]                                                                # extract said floating point numbers
@@ -638,7 +638,7 @@ def rainbow_1_1():
 
         sleep(0.01)                                                                                # delay time  
 
-def rainbow_2_2():
+def rainbow_2():
     for hue in range(300 , 360):
         rgb_fractional = colorsys.hsv_to_rgb(random.randint(hue - 10 , hue + 10) / 360.0 , s ,v)   # colorsys returns floats between 0 and 1
         r_float = rgb_fractional[0]                                                                # extract said floating point numbers
@@ -751,25 +751,25 @@ def row3():
 def row4():
     led = 0
     while led < 30:                                                                                  
-        for rows in range(5,6):
-            leds[59 - led + rows * 60] = (0 ,random.randint(0 , 125) ,random.randint(0 , 255) )     # 
-            leds[led + rows * 60] = (0 ,0 ,random.randint(0 , 155) )                                # 
+        for rows in range(5,6):                                                                     #6th row
+            leds[59 - led + rows * 60] = (0 ,random.randint(0 , 125) ,random.randint(0 , 255) )     # random colors from right to left
+            leds[led + rows * 60] = (0 ,0 ,random.randint(0 , 155) )                                # random colors from left to right
         client.put_pixels(leds)
         sleep(.01)
         led = led + 2
 
 def row5():
     led = 0
-    while led < 30:                                                                                 # 
-        for rows in range(5,6):
-            leds[29 - led + rows * 60] = (random.randint(0 , 255) ,random.randint(0 , 125) ,0 )     # 
-            leds[29 + led + rows * 60] = (random.randint(0 , 155) ,0 ,random.randint(0 , 125) )     # 
+    while led < 30:                                                                                  
+        for rows in range(5,6):                                                                     #6th row
+            leds[29 - led + rows * 60] = (random.randint(0 , 255) ,random.randint(0 , 125) ,0 )     # random colors from 29th led to left
+            leds[30 + led + rows * 60] = (random.randint(0 , 155) ,0 ,random.randint(0 , 125) )     # random colors from 30th led to right
         client.put_pixels(leds)
         sleep(.01)
         led = led + 1
 #------------------------------------------------------------------------------------------------------------------------------------------------------------
 for i in range(20):                                             #repeat the action 20 times(0-19) until one of the players win
-    Roll_the_Dice = input("Press '1' to roll the die 'Q' to QUIT")
+    Roll_the_Dice = input("Press '1' to roll the diCe or 'Q' to QUIT:")
     if player_one.pos() >= (200, 100):                          #if player 1 in winning position break the loop,
         print("Player One Wins!")                               #and print 'Player one wins'
         break
@@ -778,14 +778,14 @@ for i in range(20):                                             #repeat the acti
         break
     elif Roll_the_Dice == '1':                                  #if press 1
         dice_outcome = random.randint(1, 6)                     #get a random number from 6-side dice for player 1 
-        print("The Player 1 result of the die roll is: ")
+        print("The Player 1 result of the diCe roll is: ")
         print(dice_outcome)                                     #print random number from 6-side dice for player 1
         print("The number of Player 1 steps will be: ")
         print(20 * dice_outcome)                                #print the distance for the player 1 going forward by multipling dice_outcome by 20
         player_one.fd(20 * dice_outcome)
 
         dice_outcome = random.randint(1, 6)                     #get a random number from 6-side dice for player 2 
-        print("The Player 2 result of the die roll is: ")
+        print("The Player 2 result of the diCe roll is: ")
         print(dice_outcome)                                     #print random number from 6-side dice for player 2
         print("The number of Player 2 steps will be: ")
         print(20 * dice_outcome)                                #print the distance for the player 2 going forward by multipling dice_outcome by 20
@@ -833,11 +833,11 @@ for i in range(20):                                             #repeat the acti
 # Animations when the player1 wins
 if player_one.pos() >= (200 , 100):  
     leds = [(0 , 0 , 0)]*360                        #defined animations
-    rainbow_1_1()
+    rainbow_1()
     P(), L(0), A(0), Y(), E(0), R(0)
     ONE()
     W(), I(25), N(35), S()
-    rainbow_2_2()
+    rainbow_2()
     leds = [(0 , 0 , 0)]*360
     row(), row1(), row2()
     snake1()
@@ -848,11 +848,11 @@ if player_one.pos() >= (200 , 100):
 # Animations when the player1 wins
 elif player_two.pos() >= (200, -100):
     leds = [(0 , 0 , 0)]*360                        #defined animations
-    rainbow_1_1()
+    rainbow_1()
     P(), L(0), A(0), Y(), E(0), R(0)
     TWO()
     W(), I(25), N(35), S()
-    rainbow_2_2()
+    rainbow_2()
     leds = [(0 , 0 , 0)]*360
     row(), row1(), row2()
     snake1()
